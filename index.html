@@ -11,31 +11,30 @@
 
   <form id="taskForm">
 
-    <!-- Name -->
+   
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
       <input type="text" class="form-control" id="name" placeholder="Enter task name">
     </div>
 
-    <!-- Description -->
+  
     <div class="mb-3">
       <label for="description" class="form-label">Description</label>
       <textarea class="form-control" id="description" rows="3" placeholder="Enter task description"></textarea>
     </div>
 
-    <!-- Assigned To -->
+   
     <div class="mb-3">
       <label for="assignedTo" class="form-label">Assigned To</label>
       <input type="text" class="form-control" id="assignedTo" placeholder="Enter name">
     </div>
 
-    <!-- Due Date -->
+
     <div class="mb-3">
       <label for="dueDate" class="form-label">Due Date</label>
       <input type="date" class="form-control" id="dueDate">
     </div>
 
-    <!-- Status -->
     <div class="mb-3">
       <label for="status" class="form-label">Status</label>
       <select class="form-control" id="status">
@@ -51,7 +50,7 @@
 
   <div class="list-group">
 
-    <!-- Task 1 -->
+  
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Design Homepage</h5>
@@ -59,10 +58,15 @@
         <p><strong>Assigned To:</strong> John</p>
         <p><strong>Due Date:</strong> 2026-02-25</p>
         <p><strong>Status:</strong> TODO</p>
+        <select class="form-select priority-select mt-2">
+  <option value="LOW">LOW</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="URGENT">URGENT</option>
+</select>
       </div>
     </div>
 
-    <!-- Task 2 -->
+
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Build Login Page</h5>
@@ -70,10 +74,15 @@
         <p><strong>Assigned To:</strong> Sarah</p>
         <p><strong>Due Date:</strong> 2026-02-26</p>
         <p><strong>Status:</strong> IN PROGRESS</p>
+        <select class="form-select priority-select mt-2">
+  <option value="LOW">LOW</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="URGENT">URGENT</option>
+</select>
       </div>
     </div>
 
-    <!-- Task 3 -->
+  
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Create API Connection</h5>
@@ -81,10 +90,15 @@
         <p><strong>Assigned To:</strong> Mike</p>
         <p><strong>Due Date:</strong> 2026-02-27</p>
         <p><strong>Status:</strong> REVIEW</p>
+        <select class="form-select priority-select mt-2">
+  <option value="LOW">LOW</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="URGENT">URGENT</option>
+</select>
       </div>
     </div>
 
-    <!-- Task 4 -->
+
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Test Application</h5>
@@ -92,10 +106,15 @@
         <p><strong>Assigned To:</strong> Anna</p>
         <p><strong>Due Date:</strong> 2026-02-28</p>
         <p><strong>Status:</strong> TODO</p>
+        <select class="form-select priority-select mt-2">
+  <option value="LOW">LOW</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="URGENT">URGENT</option>
+</select>
       </div>
     </div>
 
-    <!-- Task 5 -->
+
     <div class="card mb-3">
       <div class="card-body">
         <h5 class="card-title">Deploy Project</h5>
@@ -103,11 +122,19 @@
         <p><strong>Assigned To:</strong> David</p>
         <p><strong>Due Date:</strong> 2026-03-01</p>
         <p><strong>Status:</strong> DONE</p>
+
+        <select class="form-select priority-select mt-2">
+  <option value="LOW">LOW</option>
+  <option value="MEDIUM">MEDIUM</option>
+  <option value="URGENT">URGENT</option>
+</select>
       </div>
     </div>
 
+
   </div>
 </div>
+
     <button type="submit" class="btn btn-primary">Add Task</button>
 
   </form>

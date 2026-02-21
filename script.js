@@ -36,3 +36,18 @@ document.getElementById("taskForm").addEventListener("submit", function (event) 
 
   alert("Task added successfully!");
 });
+let prioritySelects = document.querySelectorAll(".priority-select");
+
+prioritySelects.forEach(function(select) {
+  select.addEventListener("change", function() {
+
+    let card = this.closest(".task-card");
+
+    if (this.value === "URGENT") {
+      card.style.backgroundColor = "red";
+    } else {
+      card.style.backgroundColor = "";
+    }
+
+  });
+});
